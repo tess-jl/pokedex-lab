@@ -27,31 +27,37 @@ body {
     color: darkred;
 }
 
+.header-section {
+    background: lightgray; 
+}
+
+.search-sort-section {
+    background: lightgray; 
+}
+
 .pokemon-section {
     font-family: 'Play', sans-serif;
     background: lightblue; 
     margin:0;
+    padding:0;
 }
 ul {
     list-style-type: none;
 }
-
 .pokemon-list {
     display: grid; 
-    
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+    margin: 0; 
+    padding: 0;
 }
-
 .pokemon-item {
     border: 1px solid black; 
     width:100%; 
     /* box-shadow: 1px 1px 1px gray;  */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column; 
+    background: lightgray; 
 }
 
-.header-section {
-    background: lightgray; 
-}
-.search-sort-section {
-    background: lightgray; 
-}

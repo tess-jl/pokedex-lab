@@ -22,13 +22,16 @@ body {
     float: left; 
 }
 
-.header-section, .nav-section, .search-sort-section, footer {
+.header-section, .nav-section, .search-sort-section, .sort-dropdown, footer {
     font-family: 'Audiowide', cursive;
     color: darkred;
 }
+.sort-dropdown {
+    width:130px;
+}
 
 .header-section {
-    background: lightgray; 
+    border: 1px solid black;
 }
 
 .search-sort-section {
@@ -58,7 +61,7 @@ ul {
     align-items: center; 
     justify-content: center;
     flex-direction: column; 
-    background: lightgray; 
+    background: rgb(255, 255, 255); 
 }
 .info-container, footer, header, nav, .search-sort-section, .pagination-bar {
     display: flex; 
@@ -67,7 +70,7 @@ ul {
     flex-direction: column; 
 }
 
-.pagination-bar {
+.pagination-bar, header {
     flex-direction: row; 
 }
 

@@ -14,7 +14,6 @@
     <header class="header-section">
         <img id="logo" src="./assets/logo.jpg">
         <h1>Pokedex</h1>
-        <h3>search & sort 'em all</h3>
     </header>
 
     <nav class="nav-section">
@@ -25,9 +24,11 @@
         <search>Search:</search>
         <input>
 
-        <select>Sort by:
-
-
+        <select class="sort-dropdown">
+            <option value="option1" selected>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+            <option>option4</option>
         </select> 
     </section>
 
@@ -41,6 +42,31 @@
         </div>
 
         <ul class="pokemon-list">
+            <li class="pokemon-item">
+                    <div class="info-container">
+                        <h2>${pokemon.pokemon}</h2>
+                        <p class="pokemon-type">${pokemon.type_1}</p>
+                    </div>
+                    <div class="image-container">
+                        <!-- <img src="${pokemon.url_image}" alt="${pokemon.pokemon} image"> -->
+                        <img src="./assets/placeholder.jpg" alt="image">
+                    </div>
+                    <p class="hp">${pokemon.hp}</p>
+                    <p class="pokemon-gen">${pokemon.generation_id}</p>
+            </li>
+            <li class="pokemon-item">
+                    <div class="info-container">
+                        <h2>${pokemon.pokemon}</h2>
+                        <p class="pokemon-type">${pokemon.type_1}</p>
+                    </div>
+                    <div class="image-container">
+                        <!-- <img src="${pokemon.url_image}" alt="${pokemon.pokemon} image"> -->
+                        <img src="./assets/placeholder.jpg" alt="image">
+                    </div>
+                    <p class="hp">${pokemon.hp}</p>
+                    <p class="pokemon-gen">${pokemon.generation_id}</p>
+            </li>
+        
             <li class="pokemon-item">
                     <div class="info-container">
                         <h2>${pokemon.pokemon}</h2>

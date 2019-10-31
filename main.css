@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Play&display=swap');
+
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    width:100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(255, 255, 255); 
+    display: grid;
+
+}
+
+#logo {
+    width: 1.5em; 
+}
+
+.header-section, .nav-section, .search-sort-section, footer {
+    font-family: 'Audiowide', cursive;
+    color: darkred;
+}
+
+.pokemon-section {
+    font-family: 'Play', sans-serif;
+    background: lightblue; 
+}
+ul {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.pokemon-item {
+    border: 1px black; 
+}
+
+.header-section {
+    background: lightgray; 
+}
+.search-sort-section {
+    background: lightgray; 
+}

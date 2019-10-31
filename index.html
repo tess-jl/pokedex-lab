@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reset.css">
     <title>Pokedex Lab</title>
 </head>
 
 <body>
     <header class="header-section">
-        <h1>Pokedex, a place to search 'em all</h1>
+        <img id="logo" src="./assets/logo.jpg">
+        <h1>Pokedex</h1>
+        <h3>a place to search and sort 'em all</h3>
     </header>
 
     <nav class="nav-section">
@@ -50,6 +52,17 @@
                     <p class="hp">${pokemon.hp}</p>
                     <p class="pokemon-gen">${pokemon.generation_id}</p>
             </li>
+            <li class="pokemon-item">
+                    <div class="info-container">
+                        <h2>${pokemon.pokemon}</h2>
+                        <p class="pokemon-type">${pokemon.type_1}</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="${pokemon.url_image}" alt="${pokemon.pokemon} image">
+                    </div>
+                    <p class="hp">${pokemon.hp}</p>
+                    <p class="pokemon-gen">${pokemon.generation_id}</p>
+            </li>
         </ul>
     </section>
 
@@ -57,7 +70,7 @@
         ACL Pokemon Fans &copy 2019
     </footer>
 
-    <script type="module" src="app.js"></script>
+    <!-- <script type="module" src="app.js"></script> -->
 </body>
 
 </html>

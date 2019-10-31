@@ -18,7 +18,8 @@ body {
 }
 
 #logo {
-    width: 1.5em; 
+    width: 1.8em; 
+    float: left; 
 }
 
 .header-section, .nav-section, .search-sort-section, footer {
@@ -29,14 +30,23 @@ body {
 .pokemon-section {
     font-family: 'Play', sans-serif;
     background: lightblue; 
+    margin:0;
 }
 ul {
-    display: flex; 
-    justify-content: space-around;
+    list-style-type: none;
+}
+
+.pokemon-list {
+    display: grid; 
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
 }
 
 .pokemon-item {
-    border: 1px black; 
+    border: 1px solid black; 
+    width:100%; 
+    /* box-shadow: 1px 1px 1px gray;  */
 }
 
 .header-section {

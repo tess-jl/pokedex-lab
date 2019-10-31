@@ -60,4 +60,16 @@ ul {
     flex-direction: column; 
     background: lightgray; 
 }
+.info-container, footer, header, nav, .search-sort-section, .pagination-bar {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.pagination-bar {
+    flex-direction: row; 
+}
+
+
 

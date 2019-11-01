@@ -5,7 +5,7 @@ class Header extends Component {
         return /*html*/`
             <header>
                 <section>
-                    <img src="../assets/logo.jpg" alt="Pokedex logo">
+                    <img class="logo" src="../assets/logo.jpg" alt="Pokedex logo">
                     <h1>Pokedex</h1>
                 </section>
                 <nav>

@@ -2,6 +2,7 @@ import Component from '../Component.js';
 import Header from '../common/Header.js';
 import SearchSort from './SearchSort.js';
 import Pagination from './Pagination.js';
+import PokemonList from './PokemonList.js';
 
 class ExploreApp extends Component {
 
@@ -13,9 +14,13 @@ class ExploreApp extends Component {
         const searchSort = new SearchSort();
         searchSortSection.prepend(searchSort.renderDOM());
 
-        const listSection = element.querySelector('.pokemon-section');
+        const pokemonSection = element.querySelector('.pokemon-section');
         const paging = new Pagination();
-        listSection.appendChild(paging.renderDOM());
+        pokemonSection.appendChild(paging.renderDOM());
+
+        const pokemonList = new PokemonList();
+        pokemonSection.appendChild(pokemonList.renderDOM());
+
 
     }
 

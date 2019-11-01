@@ -8,11 +8,13 @@ html {
     width:100%;
     padding: 0px;
     margin: 0px;
+    border: 0; 
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
     background: rgb(255, 255, 255); 
+    border:0; 
 
 }
 
@@ -30,17 +32,12 @@ body {
 }
 
 .header-section {
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 10px;
 }
 
-.search-sort-section {
-    background: lightgray; 
-}
-
 .pokemon-section {
-    font-family: 'Play', sans-serif;
-    background: lightblue; 
+    font-family: 'Play', sans-serif; 
     margin:0;
     padding:0;
 }
@@ -54,10 +51,10 @@ ul {
     padding: 0;
 }
 .pokemon-item {
-    border: 1px solid black; 
+    border: 1px solid lightgrey; 
     border-radius: 10px; 
     width:100%; 
-    /* box-shadow: 1px 1px 1px gray;  */
+    box-shadow: 1px 1px 1px gray; 
     display: flex; 
     align-items: center; 
     justify-content: center;

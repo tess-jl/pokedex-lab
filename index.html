@@ -14,24 +14,20 @@
     <header class="header-section">
         <img id="logo" src="./assets/logo.jpg">
         <h1>Pokedex</h1>
-
         <nav class="nav-section">
             <a href="./">Home</a>
         </nav>
-
     </header>
-
-
 
     <section class="search-sort-section">
         <search>Search:</search>
         <input>
 
         <select class="sort-dropdown">
-            <option value="option1" selected>option1</option>
-            <option>option2</option>
-            <option>option3</option>
-            <option>option4</option>
+            <option value="option1" selected>by pokemon</option>
+            <option>by type</option>
+            <option>by hp</option>
+            <option>by generation</option>
         </select> 
     </section>
 
@@ -82,18 +78,7 @@
                     <p class="hp">${pokemon.hp}</p>
                     <p class="pokemon-gen">${pokemon.generation_id}</p>
             </li>
-            <li class="pokemon-item">
-                    <div class="info-container">
-                        <h2>${pokemon.pokemon}</h2>
-                        <p class="pokemon-type">${pokemon.type_1}</p>
-                    </div>
-                    <div class="image-container">
-                        <!-- <img src="${pokemon.url_image}" alt="${pokemon.pokemon} image"> -->
-                        <img src="./assets/placeholder.jpg" alt="image">
-                    </div>
-                    <p class="hp">${pokemon.hp}</p>
-                    <p class="pokemon-gen">${pokemon.generation_id}</p>
-            </li>
+
         </ul>
     </section>
 

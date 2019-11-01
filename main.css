@@ -13,7 +13,6 @@ html {
 body {
     font-family: 'Quicksand', sans-serif;
     background: rgb(255, 255, 255); 
-    display: grid;
 
 }
 
@@ -22,7 +21,7 @@ body {
     float: left; 
 }
 
-.header-section, .nav-section, .search-sort-section, .sort-dropdown, footer {
+.header-section, .search-sort-section, .sort-dropdown, footer, a, .pagination-bar {
     font-family: 'Audiowide', cursive;
     color: darkred;
 }
@@ -32,6 +31,7 @@ body {
 
 .header-section {
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .search-sort-section {
@@ -55,6 +55,7 @@ ul {
 }
 .pokemon-item {
     border: 1px solid black; 
+    border-radius: 10px; 
     width:100%; 
     /* box-shadow: 1px 1px 1px gray;  */
     display: flex; 
@@ -72,6 +73,8 @@ ul {
 
 .pagination-bar, header {
     flex-direction: row; 
+    margin-bottom: 0.5em; 
+    margin-top: 0.5em; 
 }
 
 

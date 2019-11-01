@@ -1,11 +1,16 @@
 import Component from '../Component.js';
 import Header from '../common/Header.js';
+import Footer from '../common/Footer.js';
 
 class HomeApp extends Component {
 
-    onRender(dom) {
+    onRender(element) {
         const header = new Header();
-        dom.prepend(header.renderDOM());
+        element.prepend(header.renderDOM());
+
+        const footer = new Footer(); 
+        element.append(footer.renderDOM());
+
     }
 
 

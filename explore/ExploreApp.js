@@ -3,6 +3,7 @@ import Header from '../common/Header.js';
 import SearchSort from './SearchSort.js';
 import Pagination from './Pagination.js';
 import PokemonList from './PokemonList.js';
+import Footer from '../common/Footer.js';
 
 class ExploreApp extends Component {
 
@@ -21,7 +22,8 @@ class ExploreApp extends Component {
         const pokemonList = new PokemonList();
         pokemonSection.appendChild(pokemonList.renderDOM());
 
-
+        const footer = new Footer(); 
+        element.append(footer.renderDOM());
     }
 
     renderHTML() {

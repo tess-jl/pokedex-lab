@@ -31,10 +31,6 @@ body {
     width:130px;
 }
 
-.header-section {
-    border: 1px solid gray;
-    border-radius: 10px;
-}
 
 .pokemon-section {
     font-family: 'Play', sans-serif; 

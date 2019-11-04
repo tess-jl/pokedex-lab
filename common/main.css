@@ -46,17 +46,7 @@ ul {
     margin: 0; 
     padding: 0;
 }
-.pokemon-item {
-    border: 1px solid lightgrey; 
-    border-radius: 10px; 
-    width:100%; 
-    box-shadow: 1px 1px 1px gray; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    flex-direction: column; 
-    background: rgb(255, 255, 255); 
-}
+
 .info-container, footer, header, nav, .search-sort-section, .pagination-bar {
     display: flex; 
     align-items: center; 

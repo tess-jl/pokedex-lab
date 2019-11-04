@@ -2,19 +2,18 @@ import Component from '../Component.js';
 
 class PokemonItem extends Component {
     renderHTML() {
-        const pokemon = this.props.pokemon; 
+        const { pokemon, color_1, url_image, hp, generation_id } = this.props.pokemon; 
 
         return /*html*/`
-        <li class="pokemon-item">
-            <h2>${pokemon.pokemon}</h2>
+        <li class="pokemon-item" style="background: ${color_1}">
+            <h2>${pokemon}</h2>
 
-            <img src="${pokemon.url_image}" alt="${pokemon.pokemon} image">
+            <img src="${url_image}" alt="${pokemon} image">
 
-            <p class="hp">${pokemon.hp}</p>
+            <p class="hp">hp: ${hp}</p>
 
-            <p class="pokemon-gen">${pokemon.generation_id}</p>
+            <p class="pokemon-gen">gen: ${generation_id}</p>
         </li>
-    
         `;
     }
 }

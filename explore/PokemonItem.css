@@ -6,12 +6,12 @@
 .pokemon-item {
     height: 200px;
     border: 1px solid #aaa;
-    background-color: whitesmoke;
     padding: 10px;
     display: grid;
     grid-template-rows: 15% 60% 8%;
     text-align: center;
-    color: #555;
+    color: darkred;
+    border-radius: 10px;
 }
 
 /* .pokemon-item {

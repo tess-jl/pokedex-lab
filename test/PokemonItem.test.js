@@ -6,26 +6,49 @@ QUnit.module('Render Movie Item');
 test('renders html from data', assert => {
     // arrange
     const pokemon = {
-        Title: 'Harry Potter and the Deathly Hallows: Part 2',
-        Year: '2011',
-        imdbID: 'tt1201607',
-        Type: 'movie',
-        Poster: 'https://m.media-amazon.com/images/M/MV5BMjIyZGU4YzUtNDkzYi00ZDRhLTljYzctYTMxMDQ4M2E0Y2YxXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg'
+        '_id': '5cef3501ef6005a77cd4fdd0',
+        'pokemon': 'pichu',
+        'id': 187,
+        'species_id': 172,
+        'height': 3,
+        'weight': 20,
+        'base_experience': 41,
+        'type_1': 'electric',
+        'type_2': 'NA',
+        'attack': 40,
+        'defense': 15,
+        'hp': 20,
+        'special_attack': 35,
+        'special_defense': 35,
+        'speed': 60,
+        'ability_1': 'static',
+        'ability_2': 'NA',
+        'ability_hidden': 'lightning-rod',
+        'color_1': '#F8D030',
+        'color_2': 'NA',
+        'color_f': 'NA',
+        'egg_group_1': 'no-eggs',
+        'egg_group_2': 'NA',
+        'url_image': 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/172.png',
+        'generation_id': 2,
+        'evolves_from_species_id': 'NA',
+        'evolution_chain_id': 10,
+        'shape_id': 8,
+        'shape': 'quadruped',
+        'pokebase': 'pichu',
+        'pokedex': 'http://www.pokemon.com/us/pokedex/pichu'
     };
 
     const expected = /*html*/`
-        <li class="movie-item">
-            <h2>
-                <a href="https://www.imdb.com/title/tt1201607" target="_blank">
-                    Harry Potter and the Deathly Hallows: Part 2
-                </a>
-            </h2>
-            <img 
-                src="https://m.media-amazon.com/images/M/MV5BMjIyZGU4YzUtNDkzYi00ZDRhLTljYzctYTMxMDQ4M2E0Y2YxXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
-                alt="Harry Potter and the Deathly Hallows: Part 2 movie poster"
-            >
-            <time>2011</time>
-        </li>
+    <li class="pokemon-item" style="background: ${pokemon.color_1}">
+        <h2>${pokemon.pokemon}</h2>
+
+        <img src="${pokemon.url_image}" alt="${pokemon.pokemon} image">
+
+        <p class="hp">hp: ${pokemon.hp}</p>
+
+        <p class="pokemon-gen">gen: ${pokemon.generation_id}</p>
+    </li>
     `;
 
     // act
